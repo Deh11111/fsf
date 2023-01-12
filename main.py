@@ -36,7 +36,7 @@ class Main(Resource):
 
 class Day(Resource):
     def get(self,server_code,key_id):
-        if f"{server_code}/{key_id}"==str(f"{server_code}/1"):
+        if f"{server_code}/{key_id}"==str(f"{server_code}/0"):
             return server_hour[server_code]["result"]
         else:
             return server_hour[server_code]["result"][key_id]
